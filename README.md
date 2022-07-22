@@ -6,20 +6,20 @@ This repository summarizes the relevant aspects of the following languages:
 - Rust
 - Go
 
-# Funcional orientation
+# Funcional orientated
 - Clojure
 - Elixir
 - Scala
 
-# Scritpt Oriented
+# Scritp oriented
 - Typescript
 - JavaScript
 
-# Data Oriented
+# Data oriented
 - Python
 - Julia
 
-# Mobile Orientacion
+# Mobile oriented
 - Kotlin
 - Swift
 - Dark
