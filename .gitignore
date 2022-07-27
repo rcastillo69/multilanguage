@@ -1,2 +1,5 @@
 rust/rs-basic/Cargo.lock
 rust/rs-basic/target/*
+kt/kt-basic/kt-basic.iml
+kt/kt-basic/.idea/*
+kt/kt-basic/out/*
