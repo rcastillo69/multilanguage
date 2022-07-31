@@ -3,7 +3,7 @@
   Multiple comments
 
  */
-// Mian function
+// Main function
 fun main(args: Array<String>){
     // Output console
     println("Hi Kotlin")

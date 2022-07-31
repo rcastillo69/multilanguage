@@ -3,3 +3,6 @@ rust/rs-basic/target/*
 kt/kt-basic/kt-basic.iml
 kt/kt-basic/.idea/*
 kt/kt-basic/out/*
+kt/kt-imperative/.idea/*
+kt/kt-imperative/out/*
+kt/kt-imperative/kt-imperative.iml
