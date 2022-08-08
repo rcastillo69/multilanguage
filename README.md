@@ -2,20 +2,19 @@
 ## Objectives
 
 This repository summarizes the relevant aspects of the following languages:
-# Machine Oriented
+# Server oriented
 - Rust
 - Go
 
-# Funcional orientated
+# Functional oriented
 - Clojure
-- Elixir
-- Scala
+- F#
+- Elixir / Erlang
+- Racket
+- Haskell
 
-# Scritp oriented
+# Script oriented
 - Typescript
-- JavaScript
-
-# Data oriented
 - Python
 - Julia
 
@@ -25,6 +24,58 @@ This repository summarizes the relevant aspects of the following languages:
 - Dark
 
 The topics to be reviewed in each language are as follows
+## Basic Features
+* IDE
+    * Vs Code
+    * Intellij
+* Main
+* Comments
+* Console
+* Compile / Debug
+* Output Console
+### Types
+* Constant
+* Numbers
+    * Integer
+        * Signed
+        * Unsigned
+* Floating Point
+    * 32bit
+    * 64bit
+* Characters & Strings
+    * Concatenation
+* Boolean
+* Enum
+* Pointers
+* Special type
+### Declaring Variables
+* Variables
+    * Explicit
+    * Implicit
+* Group of declarations
+* Multiple declarations inline
+* Check Type
+* Casting Data Types
+* Mutability / Immutability
+### Operators
 
-![Basic](assets/basic.png)
+### Flow
+#### Decision
+    * Simple
+    * Nested
+    * Multiple
+#### Loop
+    * Simple
+    * Recursion
+
+### Error Handling
+
+## Oriented Oriented paradigm
+
+## Functional paradigm 
+
+
+## Data structure
+
+
 
