@@ -47,7 +47,7 @@ The topics to be reviewed in each language are as follows
 * Boolean
 * Enum
 * Pointers
-* Special type
+* Special types
 ### Declaring Variables
 * Variables
     * Explicit
@@ -76,6 +76,7 @@ The topics to be reviewed in each language are as follows
 
 
 ## Data structure
+
 
 
 
