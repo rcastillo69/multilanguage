@@ -6,5 +6,4 @@ kt/kt-basic/out/*
 kt/kt-imperative/.idea/*
 kt/kt-imperative/out/*
 kt/kt-imperative/kt-imperative.iml
-ts/src/02-Type.ts
 ts/package-lock.json
