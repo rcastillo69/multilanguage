@@ -7,3 +7,5 @@ kt/kt-imperative/.idea/*
 kt/kt-imperative/out/*
 kt/kt-imperative/kt-imperative.iml
 ts/package-lock.json
+rust/rs-basic/.idea/**
+rust/rs-imperative/**
