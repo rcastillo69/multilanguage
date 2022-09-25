@@ -30,6 +30,12 @@ fn main(){
     let xu64:u64 = 64;
     let xu128:u128 = 132;
 
+    println!("variable xf32 {}", xu8);
+    println!("variable xf32 {}", xu16);
+    println!("variable xf32 {}", xu32);
+    println!("variable xf32 {}", xu64);
+    println!("variable xf32 {}", xu128);
+
     // Task define a unsigned integer
     let xf32:f32 = 32.0;
     let xf64:f64 = 64.0;
@@ -65,9 +71,9 @@ fn main(){
     println!("greeting = {}",greeting);
 
     // Task boolean
-    let isValid:bool = true;
-    println!("type of isValid {}", type_of(&isValid));
-    println!("variable isValid {}", isValid);
+    let is_valid:bool = true;
+    println!("type of isValid {}", type_of(&is_valid));
+    println!("variable isValid {}", is_valid);
 
     // Task Enum
     // The `derive` attribute automatically creates the implementation
@@ -80,6 +86,7 @@ fn main(){
     let male = GenderCategory::Male;
     let female = GenderCategory::Female;
     println!("{:?}",male);
+    println!("{:?}",female);
 
     let x = 5;
     let raw = &x as *const i32;
