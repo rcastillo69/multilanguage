@@ -24,16 +24,21 @@ This repository summarizes the relevant aspects of the following languages:
 - Dark
 
 The topics to be reviewed in each language are as follows
+
 ## Basic Features
-* IDE
-    * Vs Code
-    * Intellij
-* Main
-* Comments
-* Console
-* Compile / Debug
-* Output Console
-### Types
+* Program outputs and Comments
+    * Main
+    * Comments
+    * Console Ouput
+    * Compile / Debug
+    * Output Console
+        * Format output   
+
+## Variables & System Types
+
+### System data types
+
+#### Primitive types
 * Constant
 * Numbers
     * Integer
@@ -45,11 +50,26 @@ The topics to be reviewed in each language are as follows
 * Characters & Strings
     * Concatenation
 * Boolean
+* Date, Time & Datetime
+
+#### Composite types
 * Enum
-* Pointers
-* Special types
-### Declaring Variables
-* Variables
+* Structure
+* Slice
+* Array
+* Tuples
+* Dic
+* Vector
+* Map
+
+#### Special types
+* Null value
+* Pointers & Address
+
+
+#### Variables, values an pointers
+
+* Declaring Variables
     * Explicit
     * Implicit
 * Group of declarations
@@ -57,23 +77,49 @@ The topics to be reviewed in each language are as follows
 * Check Type
 * Casting Data Types
 * Mutability / Immutability
-### Operators
 
-### Flow
-#### Decision
+## Flow
+
+### Operators
+### Decision
     * Simple
     * Nested
     * Multiple
-#### Loop
+### Loop
     * Simple
+        * While
+        * Loop
+        * For
+    * Continue & Escaping
+
+## Functions
+    * Declaration
+    * Use
     * Recursion
 
-### Error Handling
+## Error Handling
+* Error
+* Recoverable Errors
 
-## Oriented Oriented paradigm
+## Modules & Library
+
+## Standard Libray
+
+## Memory Management
+* Stack
+* Scope, Pointers and Heap
+* OwnerShip and Borrowing
+* Shallow and Deep Copy
+* Ownership and Functions
+
+## Generic
+
+## Concurrency
+
+
+## Oriented Program paradigm 
 
 ## Functional paradigm 
-
 
 ## Data structure
 
