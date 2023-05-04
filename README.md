@@ -70,10 +70,19 @@ The topics to be reviewed in each language are as follows
 
 
 #### Operators
-* Arithmetic operators
-* Comparison operators
-* Logical operators
-* Assignment operators
+
+* Arithmetic operators: used to perform basic mathematical operations, such as addition (+), subtraction (-), multiplication (*), division (/), modulus or remainder (%), increment (++) and decrement (--).
+
+* Assignment operators: used to assign values to variables, such as the assignment operator (=) and other compound assignment operators such as +=, -=, *=, /=, %=.
+
+* Comparison operators: used to compare values, such as equality (==), inequality (!=), greater than (>), less than (<), greater than or equal to (>=) and less than or equal to (<=).
+
+* Logical operators: used to perform Boolean operations, such as the logical operator and (&&), the logical operator or (||), and the logical negation operator (!).
+Bitwise operators: used to perform bitwise operations, such as the left shift operator (<<), the right shift operator (>>), the bitwise and operator (&), the bitwise or operator (|), and the bitwise negation operator (~).
+
+* Concatenation operators: used to concatenate character strings or values, such as the concatenation operator (+).
+
+* Conditional operators: used to assign values to a variable based on a condition, such as the ternary conditional operator (?).
 
 #### Composite types
 * Characters & Strings
