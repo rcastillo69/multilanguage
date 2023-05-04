@@ -9,5 +9,5 @@
 fn main() {
     let greeting = "Welcome to rust";
     // Task: Message by console
-    println!("{}", greeting.to_string());
+    println!("Var greeting: {}", greeting.to_string());
 }

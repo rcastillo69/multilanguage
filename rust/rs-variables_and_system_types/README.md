@@ -25,9 +25,9 @@ Constants refer to fixed values that the program may not alter during its execut
 	Syntax:
 		const VARIABLE_NAME:dataType = value;
 
-## Declaring variable
+## Declaring Var
 
-- Use the var keyword, followed by variable name and type:
+- Use the var keyword, followed by Var name and type:
 
 	Syntax:
 

@@ -62,7 +62,11 @@ The topics to be reviewed in each language are as follows
 * Check Type
 * Casting Data Types
 * Mutability / Immutability
-* Datatype conversion
+
+#### Special types
+* Null value
+* Pointers & Address
+
 
 
 #### Operators
@@ -94,9 +98,7 @@ The topics to be reviewed in each language are as follows
 * Lists
 * Sets
 
-#### Special types
-* Null value
-* Pointers & Address
+
 
 
 ## Flow
