@@ -126,7 +126,7 @@ println(message)  # Output: Hello, John
 end
 
 #Task: Ternary conditional operator
-function show_ternary_concatenation_operator()
+function show_ternary_operator()
 
     println("* Ternary conditional operator")    
     x = 10
