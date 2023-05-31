@@ -49,8 +49,7 @@ The topics to be reviewed in each language are as follows
 * Boolean
 * Date, Time & Datetime
 * String
-  * Literal
-  * String object
+  * multiline
   * Concatenation
 * Char
 
