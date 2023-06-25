@@ -77,7 +77,7 @@ Bitwise operators: used to perform bitwise operations, such as the left shift op
   - For
   - Continue & Escaping
 
-#### Composite types
+### Composite types
 
 - Enum
   - Operations
@@ -154,81 +154,24 @@ Bitwise operators: used to perform bitwise operations, such as the left shift op
 
 
 ### Message Passing and Distributed Systems
-   - Message Passing Interface (MPI)
-   - Actor Model
-   - Remote Procedure Calls (RPC)
-   - Publish-Subscribe Pattern
+
+- Message Passing Interface (MPI)
+- Actor Model
+- Remote Procedure Calls (RPC)
+- Publish-Subscribe Pattern
 
 ### Hardware and Architectures for Parallelism
-   - Multicore Processors
-   - Graphics Processing Units (GPUs)
-       CUDA
-       OpenCL
-   - Clusters and Supercomputers
+
+- Multicore Processors
+- Graphics Processing Units (GPUs)
+   CUDA
+   OpenCL
+- Clusters and Supercomputers
 
 ### Performance Analysis and Optimization
-   - Performance Metrics
-   - Amdahl's Law and Gustafson's Law
-   - Profiling and Benchmarking
-   - Parallel Performance Tuning
 
-## File I/O
-### I. Introduction to File I/O
-   - What is File I/O?
-   - Importance of File I/O in programming
-   - Types of files: text and binary
-   - File encoding and character sets
-
-### Reading and Writing Files
-   - Opening and closing files
-       File modes (read, write, append)
-       Error handling and exceptions
-   - Reading from files
-       Reading the entire file
-       Reading a specific number of bytes or characters
-       Reading line by line
-       File iterators
-   - Writing to files
-       Writing data to a file
-       Writing line by line
-       Truncating and overwriting files
-
-### File Manipulation
-   - File metadata
-       File size
-       File permissions
-       File timestamps
-   - File and directory operations
-       Renaming and moving files
-       Deleting files
-       Creating directories
-       Listing directory contents
-       Removing directories
-
-### Working with Text Files
-   - String manipulation and formatting
-   - Regular expressions
-   - Parsing structured text formats
-       CSV
-       JSON
-       XML
-
-### Working with Binary Files
-   - Binary file formats
-   - Reading and writing binary data
-   - Endianness
-   - Binary file manipulation
-
-### Serialization and Deserialization
-   - What is serialization and deserialization?
-   - Serialization formats
-       Binary serialization
-       JSON serialization
-       XML serialization
-   - Custom serialization and deserialization methods
-
-### File I/O Performance
-   - Buffering and caching
-   - Asynchronous File I/O
-   - File I/O performance tuning and best practices
+- Performance Metrics
+- Amdahl's Law and Gustafson's Law
+- Profiling and Benchmarking
+- Parallel Performance Tuning
 
