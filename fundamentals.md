@@ -1,25 +1,28 @@
+# Fundamental topics for any language
 
 ## Basic Features
+
 - Program outputs and Comments
-    - Main
+  - Main
     - Comments
-      - Single Line
-      - Multiple Lines
+    - Single Line
+    - Multiple Lines
     - Console Output
     - Compile / Debug
     - Output Console
-        - Format output   
+    - Format output
 
 ## Variables & System Types
 
 ### System data types
 
 #### Primitive types & Variables, values
+
 - Constant
 - Numbers
-    - Integer 32/64 bits
-        - Signed
-        - Unsigned
+  - Integer 32/64 bits
+    - Signed
+    - Unsigned
 - Floating Point 32/64
 - Boolean
 - Date, Time & Datetime
@@ -29,12 +32,14 @@
 - Char
 
 - Declaring Variables
-    - Explicit
-    - Implicit
+  - Explicit
+  - Implicit
 - Group of declarations
 - Multiple declarations inline
 - Check Type
 - Casting Data Types
+  - String to Int/Float
+  - Int/Float to String
 - Mutability / Immutability
 
 #### Special types
@@ -57,18 +62,23 @@ Bitwise operators: used to perform bitwise operations, such as the left shift op
 - Conditional operators: used to assign values to a variable based on a condition, such as the ternary conditional operator (?).
 
 ## Flow
+
 ### Decision
-    - Simple
-    - Nested
-    - Multiple
+
+- Simple
+- Nested
+- Multiple
+
 ### Loop
-    - Simple
-        - While
-        - Loop
-        - For
-    - Continue & Escaping
+
+- Simple
+  - While
+  - Loop
+  - For
+  - Continue & Escaping
 
 #### Composite types
+
 - Enum
   - Operations
 - Structure or Record
@@ -79,115 +89,69 @@ Bitwise operators: used to perform bitwise operations, such as the left shift op
   - Operations
   - Vector
     - Operations
-  -  Multi-dimensional arrays
-     -  Operations
-- Tuples
+  - Multi-dimensional arrays
+    - Operations
+  - Tuples
   - Operations
 - Dictionaries or Maps
   - Operations
 - Lists
 - Sets
 
-
 ## Functions
-    - Declaration
-    - Function parameters and arguments
-    - Function return values
-    - Recursion
+
+- Declaration
+- Function parameters and arguments
+- Function return values
+- Recursion
 
 ## Error Handling
+
 ### Introduction to Error Handling
-   - What is Error Handling?
-   - Importance of Error Handling in programming
-   - Types of errors: compile-time, runtime, and logical errors
+
+- What is Error Handling?
+- Importance of Error Handling in programming
+- Types of errors: compile-time, runtime, and logical errors
 
 ### Basic Error Handling Techniques
-   - Return values and error codes
-   - Error handling functions and methods
-   - Assertions
+
+- Return values and error codes
+- Error handling functions and methods
+- Assertions
 
 ### Exceptions
-   - What are exceptions?
-   - Exception hierarchy and built-in exceptions
-   - Creating custom exceptions
+
+- What are exceptions?
+- Exception hierarchy and built-in exceptions
+- Creating custom exceptions
 
 ### Try-Catch-Finally Blocks
-   - The try block: capturing exceptions
-   - The catch block: handling exceptions
-       Catching specific exceptions
-       Catching multiple exceptions
-   - The finally block: executing code regardless of exception occurrence
-   - Nested try-catch-finally blocks
+
+- The try block: capturing exceptions
+- The catch block: handling exceptions
+   Catching specific exceptions
+   Catching multiple exceptions
+- The finally block: executing code regardless of exception occurrence
+- Nested try-catch-finally blocks
 
 ### Raising and Throwing Exceptions
-   - Raising exceptions
-   - Throwing exceptions
+
+- Raising exceptions
+- Throwing exceptions
 
 ### Resource Management and Cleanup
-   - Proper resource allocation and deallocation
-   - Using with statements (context managers) for resource management
+
+- Proper resource allocation and deallocation
+- Using with statements (context managers) for resource management
 
 ## Best Practices for Error Handling
-   - Defensive programming
-   - Handling exceptions at the appropriate level
-   - Providing meaningful error messages and logging
-   - Failing fast and early
-   - Testing and debugging strategies
 
+- Defensive programming
+- Handling exceptions at the appropriate level
+- Providing meaningful error messages and logging
+- Failing fast and early
+- Testing and debugging strategies
 
-
-## Concurrency, Multithreading, and Parallelism
-
-### Introduction to Concurrency and Parallelism
-   - What is Concurrency?
-   - What is Parallelism?
-   - Importance and benefits of Concurrency and Parallelism
-   - Concurrency vs. Parallelism
-
-### Multithreading
-   - Introduction to Threads
-       What is a Thread?
-       Threads vs. Processes
-   - Creating Threads
-       Thread creation in different programming languages
-       Thread lifecycle
-   - Thread Synchronization
-       Race conditions
-       Critical sections
-       Mutexes and Locks
-       Semaphores
-       Monitors and Condition Variables
-   - Deadlocks
-       Deadlock causes and detection
-       Deadlock prevention
-       Deadlock avoidance
-
-### Parallel Programming
-   - Parallel Programming Models
-       Data parallelism
-       Task parallelism
-       Pipeline parallelism
-   - Parallel Programming Constructs
-       Fork-join
-       MapReduce
-       Parallel loops
-       Parallel aggregations
-   - Load Balancing
-       Static vs. dynamic load balancing
-       Work stealing
-
-### Concurrent Data Structures
-   - Introduction to Concurrent Data Structures
-   - Lock-based Data Structures
-   - Lock-free Data Structures
-   - Wait-free Data Structures
-
-### Asynchronous Programming
-   - Asynchronous vs. Synchronous Programming
-   - Callbacks
-   - Promises and Futures
-   - Async/Await
-   - Event-driven Programming
 
 ### Message Passing and Distributed Systems
    - Message Passing Interface (MPI)
