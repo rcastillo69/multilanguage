@@ -46,7 +46,7 @@
 - Null value
 - Pointers & Address
 
-#### Operators
+#### Operators 
 
 - Arithmetic operators: used to perform basic mathematical operations, such as addition (+), subtraction (-), multiplication (-), division (/), modulus or remainder (%), increment (++) and decrement (--).
 
@@ -65,9 +65,15 @@ Bitwise operators: used to perform bitwise operations, such as the left shift op
 
 ### Decision
 
-- Simple
-- Nested
-- Multiple
+- Conditon operators
+  - Simple
+  - Comppound
+  - Predence
+- Conditional
+  - Simple
+  - Simple and otherwise 
+  - Nested
+  - Compouse conditional
 
 ### Loop
 
