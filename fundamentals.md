@@ -78,11 +78,22 @@ Bitwise operators: used to perform bitwise operations, such as the left shift op
 ### Loop
 
 - Simple
-  - While
   - Loop
+    - Nested
+    - Control
+      - Break & Continue
+      - Else
   - For
-  - Continue & Escaping
-
+    - Range
+    - Iterating a list
+    - index & element
+    - Nested
+  - While 
+    - Basic
+    - While use with else
+    - While use with break
+    - While use with continue
+    -  
 ### Composite types
 
 - Enum
