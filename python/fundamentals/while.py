@@ -54,9 +54,23 @@ def  while_loop_with_continue():
         print("Loop has ended")
 
 if __name__ == "__main__":
-    basic_while()
-    while_loop_with_else()
-    while_loop_with_break()
-    while_loop_with_continue()
+    # basic_while()4
+    3
+    5
+    # while_loop_with_else()
+    # while_loop_with_break()
+    # while_loop_with_continue()
+    n=0
+    total=0
+    while True:
+        word=input("Enter a word: ")
+       
+        if word == "q" or word == "quit":
+            break
+        else:
+             n+=1
+             total += len(word)
+    if n> 0:
+        print(f"The average word length is: {total/n}")
     
         

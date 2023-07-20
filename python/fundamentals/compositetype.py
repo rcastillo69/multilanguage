@@ -183,16 +183,63 @@ def show_set():
     print("Sets")
     # Create
     my_set = {1, 2, 3, 4, 5}
-    print(my_set)  # Output: {1, 2, 3, 4, 5}
+    print(f"my_set = {my_set}")  # Output: {1, 2, 3, 4, 5}
+    
+    # Add element
+    my_set.add(7)
 
     # Modify (Sets are mutable, but individual elements cannot be modified)
 
     # Delete
     my_set.remove(3)
-    print(my_set)  # Output: {1, 2, 4, 5}
+    print("my_set = {my_set}")  # Output: {1, 2, 4, 5, 7}
 
     # Search
     print(4 in my_set)  # Output: True
+    
+    # Length
+    print(len(my_set))   
+    
+    # Union
+    set2 = {11,13}
+    z = my_set.union(set2)
+    print(f"set2 = {z}")
+    print(f"my_set.union(set2) = {z}")
+    
+    # Union shortcut
+    set4 = {17,21}
+    print(f"set4 = {set4}")
+    z2 = z  | set4
+    print(f" z  | set4 = {z2}")
+    
+    # Intersection
+    i1 = z2.intersection(my_set)
+    print(i1)
+    
+    # Intersection shorcut
+    i2 = z2 & z
+    print(i2)
+    
+    # Difference
+    d1 = z.difference(z2)
+    print(d1)
+    
+    # Difference
+    d2 = z2 -z
+    print(d2)
+    
+    # Simetric Difergence
+    c1 = {1,2,3}
+    c2 = {1,2,4}
+    print(c2.symmetric_difference(c1))
+    
+    
+
+    
+    # clear
+    my_set.clear
+    print(my_set)  
+
 
         
 if __name__ == "__main__":
@@ -206,4 +253,31 @@ if __name__ == "__main__":
     show_dic()
     show_list()
     show_set()
+    
+    # You'll have to use the following strings:
+    num = input("Enter the numerator: ")
+    den = input("Enter the denominator: ")
+    try:
+        
+        print(f"The result of this division is {float(num)/float(den)}.")
+    except ZeroDivisionError as zd:
+        print("You cannot divide by 0.")
+        print("This division cannot be performed.")
+    except ValueError as ve:
+        if not num.isnumeric():
+           print("The numerator is not a number.")
+        if not den.isnumeric():
+            print("The denominator is not a number.")
+        print("This division cannot be performed.")
+    finally:
+        print("Goodbye!")
+    # 3) "The numerator is not a number."
+    # 4) "The denominator is not a number."
+    # 5) "You cannot divide by 0."
+    # 6) "This division cannot be performed."
+    # 7) "The result of this division is _."
+    # 8) "Goodbye!"
+        
+    
+
 
