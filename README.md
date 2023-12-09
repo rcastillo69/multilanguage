@@ -4,7 +4,10 @@
 
 This repository summarizes the relevant aspects of the following languages:
 # Server oriented
+- C
+- Zig
 - Rust
+- C++
 - Go
 - Zig
 
@@ -12,6 +15,7 @@ This repository summarizes the relevant aspects of the following languages:
 - Clojure
 - Elixir / Erlang
 - Racket
+
 
 # Script oriented
 - Typescript
