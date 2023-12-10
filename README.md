@@ -9,7 +9,6 @@ This repository summarizes the relevant aspects of the following languages:
 - Rust
 - C++
 - Go
-- Zig
 
 # Functional oriented
 - Clojure
