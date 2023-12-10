@@ -15,3 +15,10 @@ python/py-basic/__pycache__/operator.cpython-310.pyc
 =======
 .vscode/tasks.json
 >>>>>>> 1c97bdc (add c and zig)
+c/src/fundamentals/basic/.vscode
+c/src/fundamentals/data-types/.vscode
+zig/fundamentals/basic/zig-cache
+zig/fundamentals/basic/zig-out
+zig/fundamentals/data-types/zig-cache
+zig/fundamentals/data-types/zig-out
+zig/fundamentals/data-types/src/zig-cache
