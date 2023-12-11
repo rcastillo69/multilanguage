@@ -3,6 +3,8 @@
 #include <chrono>
 #include <iomanip>
 
+// Enumeration type
+enum DayOfWeek { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
 
 int main() {
     // Integer type
@@ -45,16 +47,22 @@ int main() {
     short myShort = 32767;
     std::cout << "Short: " << myShort << std::endl;
 
-     // Constant type
-    const int myConstInt = 42;
-    std::cout << "Constant Integer: " << myConstInt << std::endl;
+     // Enum type
+    DayOfWeek today = Wed;
+    std::cout << "Enum (Day of Week): " << today << std::endl;
 
-    // Printing current date using <chrono> and <iomanip>
+    // Date and Time
     auto now = std::chrono::system_clock::now();
     auto in_time_t = std::chrono::system_clock::to_time_t(now);
 
+    // Print current date
     std::cout << "Current Date: ";
     std::cout << std::put_time(std::localtime(&in_time_t), "%Y-%m-%d") << std::endl;
+
+    // Print current time
+    std::cout << "Current Time: ";
+    std::cout << std::put_time(std::localtime(&in_time_t), "%H:%M:%S") << std::endl;
+
 
 
     return 0;

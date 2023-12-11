@@ -179,7 +179,7 @@ fn main(){
   // Modify the variable through the pointer
   *my_pointer = 43;
 
-  // Imprimir el valor de la variable
+  // Print the variable
   println!("The value of pointer is : {}", &my_variable);
 
   // Define a null variable

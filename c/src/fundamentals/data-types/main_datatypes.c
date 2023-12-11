@@ -2,6 +2,9 @@
 #include <stdbool.h>
 #include <time.h>
 
+// Enumeration type
+enum DayOfWeek { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
+
 int main() {
     // Integer type
     int myInt = 10;
@@ -51,6 +54,15 @@ int main() {
     printf("Date and Time: %d-%d-%d %d:%d:%d\n", 
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
+
+    // Pointer type
+    int* ptr = &myInt;
+    printf("Pointer: %p\n", (void*)ptr);
+
+   // Enum type
+    enum DayOfWeek today = Wed;
+    printf("Enum (Day of Week): %d\n", today);
+
 
     return 0;
 
