@@ -22,3 +22,5 @@ zig/fundamentals/data-types/src/zig-cache
 cpp/.vscode
 cpp/fundamental/.idea/**
 rust/fundamental/basic/.vscode/launch.json
+rust/fundamental/variables_and_system_types/.idea
+rust/fundamental/variables_and_system_types/Cargo.lock
