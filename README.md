@@ -4,17 +4,10 @@
 
 This repository summarizes the relevant aspects of the following languages:
 # Server oriented
-- C
-- Zig
+- Go
 - Rust
 - C++
-- Go
-
-# Functional oriented
-- Clojure
-- Elixir / Erlang
-- Racket
-
+- Zig
 
 # Script oriented
 - Typescript
@@ -25,6 +18,14 @@ This repository summarizes the relevant aspects of the following languages:
 - Kotlin
 - Dart
 - Swift
+
+# Functional oriented
+- Clojure
+- Elixir / Erlang
+- Racket
+
+
+
 
 The topics to be reviewed in each language are as follows
 
