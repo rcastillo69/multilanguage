@@ -1,3 +1,5 @@
+mod main_input;
+
 use std::any::type_name;
 use chrono::prelude::*;
 
@@ -52,13 +54,11 @@ fn main(){
 
     // Task: Date, Time & DateTime
     let date =  NaiveDate::from_ymd_opt(2014, 7, 8).unwrap();
-    let time = NaiveTime::from_hms(12,30,00);
-    let datetime = NaiveDateTime::new(date,time);
+    let time = NaiveTime::from_hms_opt(12,30,00);
+    let datetime = NaiveDateTime::new(date,time.unwrap());
     print!("date:{}",date ); 
-    print!("time:{}",time );
+    print!("time:{}",time.unwrap() );
     print!("datetime:{}",datetime );
-    
-    
     
 
     // Task define a string
@@ -73,7 +73,7 @@ fn main(){
 
     // String object
     let empty_string = String::new();
-    let content_string = String::from("Rust is beatiful");
+    let content_string = String::from("Rust is beautiful");
     println!("empty_string the length is {}",empty_string.len());
     println!("content_string the length is {}",content_string.len());
 
@@ -101,42 +101,42 @@ fn main(){
     let (x, y, z) = (1, 2, 3);
     println!("x = {}, y = {}, z = {}", x, y, z);
 
-    // No exist declarations on grou
+    // No exist declarations on group
     let a = 4;
     let b = 5;
     let c = 6;
     println!("a = {}, b = {}, c = {}", a, b, c);
 
-   // Convertion int a float
+   // Conversion int a float
    let my_int: i32 = 42;
    let my_float: f32 = my_int as f32;
    println!("The var float is : {}", my_float);
 
-   // Convertion int a string
+   // Conversion int a string
    let my_int_string: String = my_int.to_string();
    println!("The var string is : {}", my_int_string);
 
-   // Convertion float a string
+   // Conversion float a string
    let my_float: f32 = 3.14159;
    let my_float_string: String = my_float.to_string();
    println!("The var string is : {}", my_float_string);
 
-   // Convertion string a int
+   // Conversion string to int
    let my_string: &str = "42";
    let my_int: i32 = my_string.parse().unwrap();
    println!("The var int is : {}", my_int);
 
-   // Convertion string a float
+   // Conversion string a float
    let my_string: &str = "3.14159";
    let my_float: f32 = my_string.parse().unwrap();
    println!("The var float is : {}", my_float);
 
-   // Convertion fecha a string
-   let my_date: NaiveDate = NaiveDate::from_ymd(2023, 5, 3);
-   let my_date_string: String = my_date.format("%Y-%m-%d").to_string();
+   // Conversion Date to string
+   let my_date: Option<NaiveDate> = NaiveDate::from_ymd_opt(2023, 5, 3);
+   let my_date_string: String = my_date.unwrap().format("%Y-%m-%d").to_string();
    println!("The var string is : {}", my_date_string);
 
-   // Convertion string a fecha
+   // Conversion string to date
    let my_string: &str = "2023-05-03";
    let my_date: NaiveDate = NaiveDate::parse_from_str(my_string, "%Y-%m-%d").unwrap();
    println!("The var date is : {}", my_date);
@@ -154,9 +154,9 @@ fn main(){
     println!("{:?}",male);
     println!("{:?}",female);
 
-    // Var inmutable
+    // Var immutable
     let my_immutable_variable: i32 = 42;
-    println!("The value of inmutable var is: {}", my_immutable_variable);
+    println!("The value of immutable var is: {}", my_immutable_variable);
 
     // Error when trying to modify a variable
     // my_immutable_variable = 43;
@@ -167,10 +167,9 @@ fn main(){
 
     // Modify mutable variable
     my_mutable_variable = 43;
-    println!("The value of mutable var modificado is: {}", my_mutable_variable);
+    println!("The value of mutable var updated is: {}", my_mutable_variable);
 
 
-  // Definir una variable y un puntero a ella 
   // define a variable & a pointer to it
 
   let mut my_variable: i32 = 42;
@@ -187,8 +186,8 @@ fn main(){
 
   // Print the variable
   match my_null_variable {
-      Some(value) => println!("El valor de la variable es: {}", value),
-      None => println!("La variable es nula"),
+      Some(value) => println!("The value of the variable is: {}", value),
+      None => println!("The variable is null"),
   }
 
 }
