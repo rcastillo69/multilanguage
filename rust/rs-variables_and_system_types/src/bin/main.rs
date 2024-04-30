@@ -56,10 +56,17 @@ fn main(){
     let date =  NaiveDate::from_ymd_opt(2014, 7, 8).unwrap();
     let time = NaiveTime::from_hms_opt(12,30,00);
     let datetime = NaiveDateTime::new(date,time.unwrap());
+<<<<<<<< HEAD:rust/rs-variables_and_system_types/src/bin/main.rs
     print!("date:{}",date ); 
     print!("time:{}",time.unwrap() );
     print!("datetime:{}",datetime );
     
+========
+    print!("date:{}",date );
+    print!("time:{}",time.unwrap() );
+    print!("datetime:{}",datetime );
+
+>>>>>>>> origin/master:rust/fundamental/variables_and_system_types/src/main.rs
 
     // Task define a string
     // String literal
@@ -88,7 +95,7 @@ fn main(){
     println!("Var letter {}", letter);
 
     // Type of declaration
-    
+
     // Explicit type declaration
     let explicit_var: i32 = 42;
     println!("explicit var: {}", explicit_var);
@@ -107,6 +114,7 @@ fn main(){
     let c = 6;
     println!("a = {}, b = {}, c = {}", a, b, c);
 
+<<<<<<<< HEAD:rust/rs-variables_and_system_types/src/bin/main.rs
    // Conversion int a float
    let my_int: i32 = 42;
    let my_float: f32 = my_int as f32;
@@ -140,6 +148,41 @@ fn main(){
    let my_string: &str = "2023-05-03";
    let my_date: NaiveDate = NaiveDate::parse_from_str(my_string, "%Y-%m-%d").unwrap();
    println!("The var date is : {}", my_date);
+========
+    // Conversion int a float
+    let my_int: i32 = 42;
+    let my_float: f32 = my_int as f32;
+    println!("The var float is : {}", my_float);
+
+    // Conversion int a string
+    let my_int_string: String = my_int.to_string();
+    println!("The var string is : {}", my_int_string);
+
+    // Conversion float a string
+    let my_float: f32 = 3.14159;
+    let my_float_string: String = my_float.to_string();
+    println!("The var string is : {}", my_float_string);
+
+    // Conversion string to int
+    let my_string: &str = "42";
+    let my_int: i32 = my_string.parse().unwrap();
+    println!("The var int is : {}", my_int);
+
+    // Conversion string a float
+    let my_string: &str = "3.14159";
+    let my_float: f32 = my_string.parse().unwrap();
+    println!("The var float is : {}", my_float);
+
+    // Conversion Date to string
+    let my_date: Option<NaiveDate> = NaiveDate::from_ymd_opt(2023, 5, 3);
+    let my_date_string: String = my_date.unwrap().format("%Y-%m-%d").to_string();
+    println!("The var string is : {}", my_date_string);
+
+    // Conversion string to date
+    let my_string: &str = "2023-05-03";
+    let my_date: NaiveDate = NaiveDate::parse_from_str(my_string, "%Y-%m-%d").unwrap();
+    println!("The var date is : {}", my_date);
+>>>>>>>> origin/master:rust/fundamental/variables_and_system_types/src/main.rs
 
     // Task Enum
     // The `derive` attribute automatically creates the implementation
@@ -170,24 +213,36 @@ fn main(){
     println!("The value of mutable var updated is: {}", my_mutable_variable);
 
 
+<<<<<<<< HEAD:rust/rs-variables_and_system_types/src/bin/main.rs
   // define a variable & a pointer to it
+========
+    // define a variable & a pointer to it
+>>>>>>>> origin/master:rust/fundamental/variables_and_system_types/src/main.rs
 
-  let mut my_variable: i32 = 42;
-  let my_pointer: &mut i32 = &mut my_variable;
+    let mut my_variable: i32 = 42;
+    let my_pointer: &mut i32 = &mut my_variable;
 
-  // Modify the variable through the pointer
-  *my_pointer = 43;
+    // Modify the variable through the pointer
+    *my_pointer = 43;
 
-  // Print the variable
-  println!("The value of pointer is : {}", &my_variable);
+    // Print the variable
+    println!("The value of pointer is : {}", &my_variable);
 
-  // Define a null variable
-  let my_null_variable: Option<i32> = None;
+    // Define a null variable
+    let my_null_variable: Option<i32> = None;
 
+<<<<<<<< HEAD:rust/rs-variables_and_system_types/src/bin/main.rs
   // Print the variable
   match my_null_variable {
       Some(value) => println!("The value of the variable is: {}", value),
       None => println!("The variable is null"),
   }
+========
+    // Print the variable
+    match my_null_variable {
+        Some(value) => println!("The value of the variable is: {}", value),
+        None => println!("The variable is null"),
+    }
+>>>>>>>> origin/master:rust/fundamental/variables_and_system_types/src/main.rs
 
 }

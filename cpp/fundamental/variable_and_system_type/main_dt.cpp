@@ -8,6 +8,11 @@ using std::cout;
 enum DayOfWeek { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
 
 int main() {
+    // Constant
+
+    const int PI = 3.1415926535;
+    std::cout << "Integer: " << PI << std::endl;
+
     // Integer type
     int myInt = 10;
     cout << "Integer: " << myInt << std::endl;
