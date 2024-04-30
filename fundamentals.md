@@ -94,7 +94,7 @@ Bitwise operators: used to perform bitwise operations, such as the left shift op
     - While use with break
     - While use with continue
     -  
-### Composite types
+## Composite types
 
 - Enum
   - Operations
@@ -169,26 +169,4 @@ Bitwise operators: used to perform bitwise operations, such as the left shift op
 - Failing fast and early
 - Testing and debugging strategies
 
-
-### Message Passing and Distributed Systems
-
-- Message Passing Interface (MPI)
-- Actor Model
-- Remote Procedure Calls (RPC)
-- Publish-Subscribe Pattern
-
-### Hardware and Architectures for Parallelism
-
-- Multicore Processors
-- Graphics Processing Units (GPUs)
-   CUDA
-   OpenCL
-- Clusters and Supercomputers
-
-### Performance Analysis and Optimization
-
-- Performance Metrics
-- Amdahl's Law and Gustafson's Law
-- Profiling and Benchmarking
-- Parallel Performance Tuning
 
