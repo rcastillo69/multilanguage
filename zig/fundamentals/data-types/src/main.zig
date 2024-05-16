@@ -2,8 +2,13 @@ const std = @import("std");
 
 pub fn main() !void {
     const stdout = std.io.getStdOut().writer();
+    var allocator = std.heap.page_allocator;
 
-    var input: f32 = try ask_user();
+    const stdin = std.io.getStdIn().reader();
+
+    try stdout.print("Enter temperature in Fahrenheit: ", .{});
+
+    const input = try stdin.readLineAlloc(allocator, 100, true);
 
     // Convert the input to a float
     var temperature = try std.fmt.parseFloat(f32, input);
@@ -13,19 +18,6 @@ pub fn main() !void {
 
     // Print the result
     try stdout.print("The temperature in Celsius is: {} °C\n", .{celsius});
-}
 
-fn ask_user() !f32 {
-    const stdin = std.io.getStdIn().reader();
-    const stdout = std.io.getStdOut().writer();
-
-    var buf: [10]f32 = undefined;
-
-    try stdout.print("A number please: ", .{});
-
-    if (try stdin.readUntilDelimiterOrEof(buf[0..], '\n')) |user_input| {
-        return std.fmt.parseInt(f32, user_input, 10);
-    } else {
-        return @as(f32, 0);
-    }
+    defer allocator.free(input);
 }

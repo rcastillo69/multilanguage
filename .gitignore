@@ -9,9 +9,12 @@ kt/kt-imperative/kt-imperative.iml
 ts/package-lock.json
 rust/rs-basic/.idea/**
 rust/rs-imperative/**
+
 rust/rs-variables_and_system_types/Cargo.lock
 python/py-basic/__pycache__/operator.cpython-310.pyc
+
 .vscode/tasks.json
+
 c/src/fundamentals/basic/.vscode
 c/src/fundamentals/data-types/.vscode
 zig/fundamentals/basic/zig-cache
@@ -30,3 +33,8 @@ rust/rs-variables_and_system_types/target/**
 cpp/fundamentals/basic/.idea/**
 cpp/fundamentals/datatypes/.idea/**
 rust/rs-variables_and_system_types/.idea/**
+challenges/coding/c001/rust/Cargo.lock
+challenges/coding/c001/rust/target/*
+challenges/coding/c002/rust/target/*
+cpp/fundamentals/basic/output/*
+rust/rs-flow-control/target/*
