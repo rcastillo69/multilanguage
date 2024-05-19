@@ -42,3 +42,6 @@ challenges/coding/c002/cpp/.idea/*
 challenges/coding/c003/cpp/.idea/*
 challenges/coding/c003/rust/target/*
 challenges/coding/c003/rust/Cargo.lock
+challenges/coding/c004/py/.idea/*
+challenges/coding/c004/cpp/.idea/*
+challenges/coding/c004/rust/target/*

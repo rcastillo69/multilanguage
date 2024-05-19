@@ -7,7 +7,7 @@ def solve(s):
     
     words = s.split(" ")
     
-    upper_words = [word.capitaliza() for word in words]
+    upper_words = [word.capitalize() for word in words]
    
     full_name = ' '.join(upper_words)
     
