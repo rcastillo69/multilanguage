@@ -45,3 +45,10 @@ challenges/coding/c003/rust/Cargo.lock
 challenges/coding/c004/py/.idea/*
 challenges/coding/c004/cpp/.idea/*
 challenges/coding/c004/rust/target/*
+challenges/coding/c005/cpp/.idea/*
+challenges/coding/c005/py/.idea/*
+challenges/coding/c005/rust/target/*
+challenges/coding/c005/rust/.idea/*
+challenges/coding/c005/rust/Cargo.lock
+challenges/coding/c005/.vscode/task.json
+challenges/coding/c005/.vscode/launch.json
