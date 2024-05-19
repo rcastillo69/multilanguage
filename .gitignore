@@ -38,3 +38,7 @@ challenges/coding/c001/rust/target/*
 challenges/coding/c002/rust/target/*
 cpp/fundamentals/basic/output/*
 rust/rs-flow-control/target/*
+challenges/coding/c002/cpp/.idea/*
+challenges/coding/c003/cpp/.idea/*
+challenges/coding/c003/rust/target/*
+challenges/coding/c003/rust/Cargo.lock
