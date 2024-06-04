@@ -1,54 +1,31 @@
-rust/rs-basic/Cargo.lock
-rust/rs-basic/target/*
-kt/kt-basic/kt-basic.iml
-kt/kt-basic/.idea/*
-kt/kt-basic/out/*
-kt/kt-imperative/.idea/*
-kt/kt-imperative/out/*
-kt/kt-imperative/kt-imperative.iml
-ts/package-lock.json
-rust/rs-basic/.idea/**
-rust/rs-imperative/**
+# IDE and build artifacts
+.idea/*
+.vscode/*
 
-rust/rs-variables_and_system_types/Cargo.lock
-python/py-basic/__pycache__/operator.cpython-310.pyc
+# Language specific build and cache files
+*.iml
+Cargo.lock
+target/*
+out/*
+zig-cache
+zig-out
+__pycache__
 
-.vscode/tasks.json
+# Specific configuration files
+.trunk
+# Ignore all task and launch configurations
+*.json
 
-c/src/fundamentals/basic/.vscode
-c/src/fundamentals/data-types/.vscode
-zig/fundamentals/basic/zig-cache
-zig/fundamentals/basic/zig-out
-zig/fundamentals/data-types/zig-cache
-zig/fundamentals/data-types/zig-out
-zig/fundamentals/data-types/src/zig-cache
-cpp/.vscode
-cpp/fundamental/.idea/**
-rust/fundamental/basic/.vscode/launch.json
-rust/fundamental/variables_and_system_types/.idea
-rust/fundamental/variables_and_system_types/Cargo.lock
-cpp/.idea/** 
-cpp/fundamentals/.idea/**
-rust/rs-variables_and_system_types/target/**
-cpp/fundamentals/basic/.idea/**
-cpp/fundamentals/datatypes/.idea/**
-rust/rs-variables_and_system_types/.idea/**
-challenges/coding/c001/rust/Cargo.lock
-challenges/coding/c001/rust/target/*
-challenges/coding/c002/rust/target/*
-cpp/fundamentals/basic/output/*
-rust/rs-flow-control/target/*
-challenges/coding/c002/cpp/.idea/*
-challenges/coding/c003/cpp/.idea/*
-challenges/coding/c003/rust/target/*
-challenges/coding/c003/rust/Cargo.lock
-challenges/coding/c004/py/.idea/*
-challenges/coding/c004/cpp/.idea/*
-challenges/coding/c004/rust/target/*
-challenges/coding/c005/cpp/.idea/*
-challenges/coding/c005/py/.idea/*
-challenges/coding/c005/rust/target/*
-challenges/coding/c005/rust/.idea/*
-challenges/coding/c005/rust/Cargo.lock
-challenges/coding/c005/.vscode/task.json
-challenges/coding/c005/.vscode/launch.json
+# Ignore .idea folders in all subdirectories of challenges/coding
+challenges/**/*.idea/
+
+# Ignore remaining .vscode in challenges folder (excluding tasks.json)
+challenges/**/*.vscode/*
+
+# Ignore remaining .gitignore files
+challenges/**/*.gitignore
+challenges/**/*target/*
+**/*.vscode/*
+challenges/**/*.vscode/*
+**/*.idea/*
+**/*CMakeFiles/*
