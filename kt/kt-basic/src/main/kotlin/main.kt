@@ -1,8 +1,10 @@
-// Simple comments
+// Simple comment
+
 /*
-  Multiple comments
+  Multiple line comments
 
  */
+
 // Main function
 fun main(args: Array<String>){
     // Output console
