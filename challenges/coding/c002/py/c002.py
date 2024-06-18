@@ -1,5 +1,3 @@
-
-
 def get_military_time(parts: list[str]) -> str:
     return parts[0] + ":" + parts[1] + ":" + parts[2]
 
@@ -26,7 +24,22 @@ def timeConversion(s):
     return get_military_time(parts_time)
 
 
-if __name__ == '__main__':
-    s = input("Input a datetime:")
+def get_args_and_kwargs(*args, **kargs):
+    num = kwargs.get("num", 0)
+    if not isinstance(num, int) and not isinstance(num, float):
+        return False
 
-    print(timeConversion(s))
+    total_parameters = len(args) + len(kargs)
+
+    return total_parameters >= 4 and num > 5
+
+
+if __name__ == '__main__':
+    # s = input("Input a datetime:")
+
+    # print(timeConversion(s))
+    args = ["a", [2], 3]
+    kwargs = {"num": 4}
+    result = get_args_and_kwargs(*args, **kwargs)
+
+    print(result)

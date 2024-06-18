@@ -1,7 +1,6 @@
 ### Introduction to Data Structures
-* Importance of data structures in programming
-* Types of data structures
-* Time and space complexity
+* [Definition and Importance of data structures in programming!](/datastructure/definition.md)
+* [Complexity Analysis](/datastructure/)
 * Choosing the right data structure for a problem
 
 ### Linear Data Structures

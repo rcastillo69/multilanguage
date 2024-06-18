@@ -1,27 +1,64 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": "(gdb) Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/a.out", // 
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb", // 
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "build",
-            "internalConsoleOptions": "openOnSessionStart"
-        }
+      {
+        "name": "Kotlin: Compile and Run",
+        "type": "kotlin",
+        "request": "launch",
+        "preLaunchTask": "Compile Kotlin",
+        "projectRoot": "${workspaceFolder}/app",
+        "mainClass": "kt/Main.kt"
+      },
+      {
+        "name": "Python: Current File",
+        "type": "debugpy",  // Changed from "python"
+        "request": "launch",
+        "program": "${workspaceFolder}/py/main.py",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "Rust: Cargo",
+        "type": "lldb",
+        "request": "launch",
+        "program": "${workspaceFolder}/rust/target/debug/${workspaceFolderBasename}",
+        "args": [],
+        "cwd": "${workspaceFolder}/rust",
+        "console": "integratedTerminal",
+        "preLaunchTask": "Rust: cargo build"
+      },
+      {
+        "name": "C++: g++.exe build and debug active file",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/cpp/main",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}/cpp",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "C/C++: g++ build active file",
+        "internalConsoleOptions": "openOnSessionStart"
+      },
+      {
+        "name": "Go: Launch",
+        "type": "go",  // Changed from "type": "go" (already using correct type)
+        "request": "launch",
+        "mode": "auto",
+        "program": "${workspaceFolder}/go",
+        "cwd": "${workspaceFolder}/go",
+        "env": {},
+        "args": [],
+        "console": "integratedTerminal"
+      }
     ]
-}
+  }
