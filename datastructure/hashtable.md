@@ -30,3 +30,175 @@ However, in practice and especially in coding interviews, we typically assume th
 - Implementing sets, where only keys matter and not values
 
 
+
+Here's a list of examples showing how to create, add, update, and delete items in a hash table for various programming languages:
+
+### Python
+
+```python
+# Create hash table
+hash_table = {}
+
+# Add item
+hash_table["key1"] = "value1"
+
+# Update item
+hash_table["key1"] = "updated_value1"
+
+# Delete item
+del hash_table["key1"]
+
+# Example usage
+print(hash_table)
+```
+
+### TypeScript
+
+```typescript
+// Create hash table
+let hashTable: { [key: string]: string } = {};
+
+// Add item
+hashTable["key1"] = "value1";
+
+// Update item
+hashTable["key1"] = "updated_value1";
+
+// Delete item
+delete hashTable["key1"];
+
+// Example usage
+console.log(hashTable);
+```
+
+### Golang
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    // Create hash table
+    hashTable := make(map[string]string)
+
+    // Add item
+    hashTable["key1"] = "value1"
+
+    // Update item
+    hashTable["key1"] = "updated_value1"
+
+    // Delete item
+    delete(hashTable, "key1")
+
+    // Example usage
+    fmt.Println(hashTable)
+}
+```
+
+### C++
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+
+int main() {
+    // Create hash table
+    std::unordered_map<std::string, std::string> hashTable;
+
+    // Add item
+    hashTable["key1"] = "value1";
+
+    // Update item
+    hashTable["key1"] = "updated_value1";
+
+    // Delete item
+    hashTable.erase("key1");
+
+    // Example usage
+    for (const auto& item : hashTable) {
+        std::cout << item.first << ": " << item.second << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### Rust
+
+```rust
+use std::collections::HashMap;
+
+fn main() {
+    // Create hash table
+    let mut hash_table = HashMap::new();
+
+    // Add item
+    hash_table.insert("key1", "value1");
+
+    // Update item
+    hash_table.insert("key1", "updated_value1");
+
+    // Delete item
+    hash_table.remove("key1");
+
+    // Example usage
+    for (key, value) in &hash_table {
+        println!("{}: {}", key, value);
+    }
+}
+```
+
+### Java
+
+```java
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create hash table
+        HashMap<String, String> hashTable = new HashMap<>();
+
+        // Add item
+        hashTable.put("key1", "value1");
+
+        // Update item
+        hashTable.put("key1", "updated_value1");
+
+        // Delete item
+        hashTable.remove("key1");
+
+        // Example usage
+        for (String key : hashTable.keySet()) {
+            System.out.println(key + ": " + hashTable.get(key));
+        }
+    }
+}
+```
+
+### Kotlin
+
+```kotlin
+fun main() {
+    // Create hash table
+    val hashTable = mutableMapOf<String, String>()
+
+    // Add item
+    hashTable["key1"] = "value1"
+
+    // Update item
+    hashTable["key1"] = "updated_value1"
+
+    // Delete item
+    hashTable.remove("key1")
+
+    // Example usage
+    for ((key, value) in hashTable) {
+        println("$key: $value")
+    }
+}
+```
+
+
+
+
