@@ -33,3 +33,14 @@ An array-based histogram is a technique that uses an array to count the occurren
 1. **Equalize the Array:** Determining the minimum number of elements to delete to leave only elements of equal value.
 2. **Find the Most Frequent Element:** Identifying the element with the highest frequency in an array.
 3. **Character Frequency Count:** Counting the frequency of characters in a string for problems like anagram checks.
+
+## Pattern 4: Two Pointers
+   
+### Description: 
+
+A technique where two pointers are used to iterate through the array from different ends or based on conditions to reduce the complexity.
+
+### Use Cases:
+- Finding pairs in an array that sum up to a target
+- Removing duplicates from a sorted array
+- Container with most water
