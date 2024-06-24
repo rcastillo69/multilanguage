@@ -52,3 +52,67 @@ A technique where two pointers are used to iterate through the array from differ
 - Finding pairs in an array that sum up to a target
 - Removing duplicates from a sorted array
 - Container with most water
+
+
+## Pattern 5: Array Rotation
+
+![array_rotation](image/circular_array.png)
+
+### Description:
+
+Array rotation involves shifting the elements of an array to the left or right by a certain number of positions. This pattern helps in rearranging elements efficiently using slicing techniques.
+
+### Formulas:
+
+- **Left Rotation:**
+  - **Formula:** `rotated_array = array[d:] + array[:d]`
+  - **Explanation:** Split the array into two parts at index `d` and concatenate the second part with the first part.
+  
+- **Right Rotation:**
+  - **Formula:** `rotated_array = array[-d:] + array[:-d]`
+  - **Explanation:** Split the array into two parts at index `-d` and concatenate the last part with the first part.
+
+### Use Cases:
+
+- Shifting elements in circular queues
+- Cryptography and data obfuscation
+- Music playlists rotations
+- Solving problems involving circular data structures
+
+### Example Code for Both Rotations
+
+```python
+def left_rotate(arr, d):
+    n = len(arr)
+    d = d % n  # In case d > n
+    return arr[d:] + arr[:d]
+
+def right_rotate(arr, d):
+    n = len(arr)
+    d = d % n  # In case d > n
+    return arr[-d:] + arr[:-d]
+
+# Example usage:
+arr = [1, 2, 3, 4, 5]
+d = 2
+
+print("Left Rotation:", left_rotate(arr, d))  # Output: [3, 4, 5, 1, 2]
+print("Right Rotation:", right_rotate(arr, d))  # Output: [4, 5, 1, 2, 3]
+```
+
+### Diagrams
+
+#### Left Rotation Diagram
+```
+Original Array:    [1, 2, 3, 4, 5]
+Split:             [1, 2] | [3, 4, 5]
+Rotated Array:     [3, 4, 5, 1, 2]
+```
+
+#### Right Rotation Diagram
+```
+Original Array:    [1, 2, 3, 4, 5]
+Split:             [1, 2, 3] | [4, 5]
+Rotated Array:     [4, 5, 1, 2, 3]
+```
+
