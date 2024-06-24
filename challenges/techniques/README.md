@@ -2,6 +2,8 @@
 
 ## Pattern 1: Sliding Window
 
+![sliciing window](image/scliding_window.png)
+
 ### Description:
 The sliding window technique involves creating a moving subarray (or window) of a fixed size that slides over the array to perform operations efficiently. This technique is especially useful for problems involving sums, averages, or other metrics over subarrays of a fixed size.
 
@@ -13,6 +15,8 @@ The sliding window technique involves creating a moving subarray (or window) of 
 ---
 
 ## Pattern 2: Prefix Sums
+
+![sliciing window](image/prefix.png)
 
 ### Description:
 The prefix sum technique involves creating an array where each element at index `i` contains the sum of the array elements from the start up to index `i`. This technique helps in efficiently calculating the sum of any subarray.
@@ -26,6 +30,8 @@ The prefix sum technique involves creating an array where each element at index 
 
 ## Pattern 3: Array-based Histogram
 
+![sliciing window](image/histogram.png)
+
 ### Description:
 An array-based histogram is a technique that uses an array to count the occurrences of elements within a given value range. The indices of the array represent the values, and the elements at these indices represent the counts.
 
@@ -35,6 +41,8 @@ An array-based histogram is a technique that uses an array to count the occurren
 3. **Character Frequency Count:** Counting the frequency of characters in a string for problems like anagram checks.
 
 ## Pattern 4: Two Pointers
+
+![sliciing window](image/two_pointer.png)
    
 ### Description: 
 
